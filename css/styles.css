@@ -572,14 +572,83 @@ img {
   height: 40px;
 }
 
-/*.footer-p:hover::after {
-  content: "";
-  width: 5px;
-  height: 100px;
-  background-color: orange;
+/*-------------Modal Windown styles---------------*/
+
+.modal-overlay {
+  opacity: 0; /*прозорість модального вікна змінити значення на 0.5 коли закінчу верстку вікна */
+  pointer-events: none; /* игнорувати події миші коли модальне вікно приховано (opacity:0)*/
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* коли модальне вікно відкрите(при додаванні додаткового класу в dic class="modal-overlay is-open" */
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  background-color: #fff;
+}
+
+.modal {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+}
+
+.window-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.modal-window {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+  width: 360px;
+  height: 336px;
 }
-*/
+
+.label-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-policy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.policy-link {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+.modal-button {
+  color: #fff;
+  background-color: #4d5ae5;
+}
