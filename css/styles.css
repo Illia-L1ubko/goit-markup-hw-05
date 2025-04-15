@@ -548,7 +548,9 @@ img {
 .footer-links {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
+
 
 .footer-social-card {
   width: 100%;
@@ -627,7 +629,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -666,13 +668,13 @@ fill: #ffffff
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*--- when backdrop is opened---*/
+/*--- when backdrop is open---*/
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-/*--- when backdrop is opened---*/
+/*--- when backdrop is open---*/
 
 
 .modal {
@@ -732,8 +734,8 @@ transform: translate(-50%, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-window-btn:hover .x-mark-btn,
-.close-window-btn:hover .x-mark-btn {
+.close-window-btn:hover svg,
+.close-window-btn:focus svg {
   fill: #ffffff;
 }
 
@@ -821,6 +823,10 @@ position: relative;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input .textarea {
+  margin-bottom: 16px;
+}
+
 .textarea:focus  {
   border-color: #4D5AE5;
 }
@@ -836,7 +842,7 @@ position: relative;
   color: #8e8f99; 
 }
 
-.privacy-link {
+ .link-policy{
   color: #4d5ae5;
 }
 
