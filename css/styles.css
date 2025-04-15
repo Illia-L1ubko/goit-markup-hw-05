@@ -751,12 +751,9 @@ transform: translate(-50%, -50%);
 }
 
 .form-input {
-  margin-bottom: 16px;
-}
-
-.modalwindow-form {
   margin-bottom: 8px;
 }
+ 
 .form-label {
   font-size: 12px;
   line-height: 1.17;
